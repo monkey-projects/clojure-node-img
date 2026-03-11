@@ -1,4 +1,4 @@
-FROM docker.io/clojure:tools-deps-trixie-slim
+FROM docker.io/alpine:latest
 
-RUN apt-get update
-RUN apt-get install -y nodejs npm
+RUN apk update
+RUN apk add -y clojure nodejs
